@@ -1,0 +1,23 @@
+{
+  "name": "yu_design_component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm -C play dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@yu_design/components": "workspace:^",
+    "@yu_design/theme-chalk": "workspace:^",
+    "@yu_design/utils": "workspace:^",
+    "typescript": "^5.4.2",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "unplugin-vue-define-options": "^1.4.2"
+  }
+}
