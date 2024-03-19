@@ -3,6 +3,7 @@
     "module": "ESNext",
     "declaration": false,
     "noImplicitAny": true,
+    "removeComments": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "jsx": "preserve",

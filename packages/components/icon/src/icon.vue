@@ -1,24 +1,24 @@
 <template>
-    <i :class="bem.b()" :style="style">
-        <slot />
-    </i>
+  <i :class="bem.b()" :style="style">
+    <slot />
+  </i>
 </template>
 <script setup lang="ts">
 import { createNamespace } from '@yu_design/utils/create';
 import { computed } from 'vue';
 import { iconProps } from './icon';
 defineOptions({
-    name: 'y-icon'
+  name: 'y-icon'
 })
 const bem = createNamespace('icon')
 const props = defineProps(iconProps)
 const style = computed(() => {
-    if (!props.size && !props.color) return {}
-    return {
-        ...(props.size ? { 'font-size': props.size + 'px' } : {}),
-        ...(props.color ? { 'color': props.color } : {})
+  if (!props.size && !props.color) return {}
+  return {
+    ...(props.size ? { 'font-size': props.size + 'px' } : {}),
+    ...(props.color ? { 'color': props.color } : {})
 
-    }
+  }
 })
 </script>
-<style></style>
+<style lang="scss"></style>

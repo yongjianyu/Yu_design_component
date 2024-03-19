@@ -6,7 +6,7 @@ function _bem(
   element: string,
   modifier: string
 ) {
-  if (prefixName) {
+  if (blockSuffix) {
     prefixName += `-${blockSuffix}`;
   }
   if (element) {
@@ -36,7 +36,7 @@ function createBEM(prefixName: string) {
     modifier: string = ""
   ) =>
     block && element && modifier ? _bem(prefixName, block, element, "") : "";
-  const is = (name: string, state) => (state ? `is-${name}` : "");
+  const is = (name: string, state: boolean) => (state ? `is-${name}` : "");
   return {
     b,
     e,
